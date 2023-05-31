@@ -1,13 +1,19 @@
-import "./Home.scss";
+import Products from "../Products/Products";
 import Banner from "./Banner/Banner";
-import Newsletter from "../Footer/Newsletter/Newsletter";
-import Footer from "../Footer/Footer";
+import Category from "./Category/Category";
+import "./Home.scss";
 
 const Home = () => {
   return (
     <>
-      <div className='home'>
+      <div>
         <Banner />
+        <div className='main-content'>
+          <div className='layout'>
+            <Category />
+            <Products />
+          </div>
+        </div>
       </div>
     </>
   );
